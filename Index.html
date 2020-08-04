@@ -1,0 +1,68 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	  <script src="chartscript.js"></script>
+	  <title>My Chart </title>
+	<style>
+	.header {
+	      padding: 5px ;
+		  text-align:center;
+		  height: 25%;
+		  width: 100%;
+		  background-color: rgba(0, 142, 159, 0.8); 
+		  border :2px solid black;
+		  
+		}
+    .category{
+	margin-left:20px;
+	margin-right:20px;
+    float:left;
+	padding-left:35px;
+	padding-right:35px;
+	}
+	</style>
+	</head>
+	<body>
+	<div class="header" >
+     <h1 style="font-size:20px;color:white">Menu</h1> 
+	</div>
+     <br>
+	 
+ 	 <div class="category">
+   <img src="square.jpg" alt="square" width=15px height=15px  >
+
+	  Category : <select class="dropdown" id="category" onchange="check()" >
+	  <option value="" selected="selected">Select category</option>
+		<option value="1">Category A</option>
+		<option value="2">Category B</option>
+		<option value="3">Category C</option>
+	</select></div>
+	 <div class="category">
+<img src="square.jpg" alt="square" width=15px height=15px >
+		Product Type : <select class="dropdown" id="product" onchange="check()">
+	  <option value="" selected="selected">Select Products</option>
+		<option value="4">Laptop</option>
+		<option value="5">Harddisk</option>
+		<option value="6">Pendrive</option>
+	</select>  
+</div>
+		 <div class="category">
+  
+	<img src="square.jpg" alt="square" width=15px height=15px >
+	Brand : <select class="dropdown" id="brand" onchange="check()">
+	  <option value="" selected="selected">Select Serial Number</option>
+		<option value="7">Lenovo</option>
+		<option value="8">Apple</option>
+		<option value="9">Acer</option>
+	</select>
+	</div>
+
+	  <div class="container">
+		<canvas id="myChart"></canvas>
+	  </div>
+	</body>
+	</html>
